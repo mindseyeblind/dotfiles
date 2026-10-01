@@ -1,0 +1,27 @@
+/* Last updated Firefox 157, 10 Oct 2026 */
+/* Make Proton look a little more classic */
+
+:root {
+  /* Less rounded borders */
+  /* --tab-border-radius is --border-radius-xlarge */
+  --border-radius-small: 4px !important;
+  --border-radius-medium: 4px !important;
+  --border-radius-large: 6px !important;
+  --border-radius-xlarge: 6px !important;
+
+  /* Increase tab height */
+  --tab-margin-block: 2px !important;
+
+  /* Resize tab context line */
+  --tab-context-line-block-offset: 2px !important;
+  --tab-context-line-inline-offset: 4px !important;
+}
+
+/* Make URL icons fit better */
+#identity-box,
+#trust-icon-container,
+#urlbar-label-box {
+  /* height: var(--urlbar-basic-component-size); */
+  height: 100%;
+  margin-left: -2px;
+}
